@@ -1,4 +1,4 @@
-package alearn.code04_06;
+package alearn.class04_06;
 
 public class Code03 {
 

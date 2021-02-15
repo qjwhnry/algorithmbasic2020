@@ -1,5 +1,8 @@
 package class07;
 
+/**
+ * 后继节点
+ */
 public class Code07_SuccessorNode {
 
 	public static class Node {

@@ -2,6 +2,13 @@ package class08;
 
 import java.util.LinkedList;
 
+/**
+ * 给定一颗二叉树的头节点head，返回这颗二叉树中是不是完全二叉树
+ * 完全二叉树判断
+ *
+ * 宽度优先 ： 需要用到队列
+ * 递归
+ */
 public class Code06_IsCBT {
 
 	public static class Node {

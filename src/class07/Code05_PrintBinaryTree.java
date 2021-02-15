@@ -1,5 +1,8 @@
 package class07;
 
+/**
+ * 如何设计一个打印整颗数的打印函数
+ */
 public class Code05_PrintBinaryTree {
 
 	public static class Node {
