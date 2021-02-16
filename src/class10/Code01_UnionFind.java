@@ -4,6 +4,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Stack;
 
+/**
+ * 并查集
+ */
 public class Code01_UnionFind {
 
 	public static class Node<V> {
@@ -45,6 +48,12 @@ public class Code01_UnionFind {
 			return cur;
 		}
 
+		/**
+		 * 是否相同，头节点相同（内存地址）
+		 * @param a
+		 * @param b
+		 * @return
+		 */
 		public boolean isSameSet(V a, V b) {
 			if (!nodes.containsKey(a) || !nodes.containsKey(b)) {
 				return false;
@@ -52,6 +61,11 @@ public class Code01_UnionFind {
 			return findFather(nodes.get(a)) == findFather(nodes.get(b));
 		}
 
+		/**
+		 * 合并
+		 * @param a
+		 * @param b
+		 */
 		public void union(V a, V b) {
 			if (!nodes.containsKey(a) || !nodes.containsKey(b)) {
 				return;

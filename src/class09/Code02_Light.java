@@ -3,6 +3,12 @@ package class09;
 import java.util.HashSet;
 
 /**
+ * 贪心算法
+ * 给定一个字符串str，只由"X"和”.“两种字符串构成
+ * X表示墙，不能放灯，也不需要点亮
+ * . 表示居民点，可以放灯，需要点亮
+ * 如果灯放在i位置，可以放i-1，i和i+1三个位置被点亮
+ * 返回如果点亮str中所有需要点亮灯的位置，至少需要几盏灯
  * 灯
  * XXX...XXX.XX..XX  i-1，i，i+1
  */
@@ -39,7 +45,7 @@ public class Code02_Light {
 				yes = process(str, index + 1, lights);
 				lights.remove(index);
 			}
-			return Math.min(no, yes);
+ 			return Math.min(no, yes);
 		}
 	}
 
@@ -77,7 +83,7 @@ public class Code02_Light {
 
 	public static void main(String[] args) {
 		int len = 20;
-		int testTime = 100000;
+		int testTime = 1;
 		for (int i = 0; i < testTime; i++) {
 			String test = randomString(len);
 			int ans1 = minLight1(test);

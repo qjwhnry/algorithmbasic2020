@@ -3,6 +3,16 @@ package class09;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
+/**
+ * 项目
+ * M表示初始资金
+ * K表示只能串行做k个项目
+ * 说明：每做完一个项目马上获得收益，可以支持下一个项目，不能并行
+ * 输出：你最后获得的最大钱数
+ *
+ * Capital 花费
+ * Profits 利润
+ */
 public class Code05_IPO {
 
 	public static int findMaximizedCapital(int K, int W, int[] Profits, int[] Capital) {
